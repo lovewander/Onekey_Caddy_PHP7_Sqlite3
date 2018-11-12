@@ -25,6 +25,10 @@
 * 支持系统：Centos 7+  Debian 8+ （建议选择 Debian 8 mini版）
 -----
 -----
+如果你是Debian 9，则需要先编辑脚本，删掉以下2行代码：
+
+#添加源  echo "deb http://packages.dotdeb.org jessie all" | tee --append /etc/apt/sources.list  echo "deb-src http://packages.dotdeb.org jessie all" | tee --append /etc/apt/sources.list
+
 
 ## 一键安装 Caddy+PHP7+Sqlite3 环境
 #### 1.解析好域名 2.执行以下命令
